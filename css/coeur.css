@@ -1,0 +1,218 @@
+:root {
+    --global-love: rgb(227, 127, 189);
+    --global-darklove: rgb(71, 4, 41);
+    --global-shadow : rgba(255, 255, 255, 0.404);
+}
+
+*{
+    margin:0;
+    padding:0;
+} 
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width:100vw;
+    background: var(--global-darklove, rgb(114, 29, 76));
+    position:fixed;
+}
+
+/* Header */
+#check{
+    display:none;
+}
+
+.checkbtn{
+    padding:5px;
+}
+
+.checkbtn > ion-icon{
+    font-size:80px;
+    color: var(--global-love, rgb(163, 17, 98));
+    cursor:pointer;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    margin-left:20px;
+    padding:10px;
+    width:320px;
+    left:-3000px; /* Pour cacher la bare de menu */
+    z-index:4;
+    transition:all 1s;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    background-color: var(--global-darklove, rgb(114, 29, 76));
+    border : 2px solid rgb(227, 127, 189);
+    border-radius : 15px;
+}
+
+blockquote{
+    margin:10px;
+    font-family:Love;
+    font-style:italic;
+    font-size:20px;
+    color:white;
+}
+
+figcaption, cite{
+    margin:5px;
+    font-family:Love;
+    font-size:15px;
+    color:white;
+}
+
+.sup{
+    margin:15px;
+    font-family:Love;
+    font-size:15px;
+    color:white;
+}
+
+#check:checked ~.menu{
+    left:0;
+}
+
+/* Pour le texte central */
+main{
+    display:flex;
+    min-height:80vh;
+    justify-content: center;
+    align-items: center;    
+}
+
+.blocText{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iLoveU{
+    position:left;
+    font-size:130px;
+    font-family:Lovely;
+    font-weight: bold;
+    color:white;
+    z-index:2;
+}
+
+.emojiHeart{
+    font-size : 150px;
+    z-index:2;
+}
+
+/* Pour les coeurs */
+div.heart{
+    position:absolute;
+    bottom:-100px;
+    z-index:1;
+}
+
+div.heart:hover{
+    animation:none;
+}
+
+ion-icon{
+    font-size: 100px;
+    color:  var(--global-love, rgb(163, 17, 98));
+    filter: drop-shadow(6px 10px 5px rgb(0 0 0 / 0.4));
+}
+
+.a{
+    left:10%;
+    animation: anim 5s ease-in 3s infinite;
+}
+
+.b{
+    left:25%;
+    animation: anim 3.5s ease-in 3.4s infinite;
+}
+
+.c{
+    left:6%;
+    animation: anim 7s ease-in 5.8s infinite;
+}
+
+.d{
+    left:55%;
+    animation: anim 3.8s ease-in 5s infinite;
+}
+
+.e{
+    left:70%;
+    animation: anim 5.3s ease-in 5.5s infinite;
+}
+
+.f{
+    left:80%;
+    animation: anim 5.5s ease-in 5s infinite;
+}
+
+.g{
+    left:58%;
+    animation: anim 5.5s ease-in 5s infinite;
+}
+
+.h{
+    left:45%;
+    animation: anim 4.6s ease-in 5s infinite;
+}
+
+.i{
+    left:33%;
+    animation: anim 3.8s ease-in 5.1s infinite;
+}
+
+.j{
+    left:66%;
+    animation: anim 5s ease-in 4.5s infinite;
+}
+
+.k{
+    left:20%;
+    animation: anim 6s ease-in infinite;
+}
+
+ion-icon::before{
+    content:'';
+    position:absolute;
+    top:15px;
+    right:13px;
+    bottom:0px;
+}
+
+@keyframes anim{
+    0%{
+        opacity:0;
+    }
+
+    10%, 100%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(90px, -1000px);
+        display:none;
+    }
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    z-index:3;
+    width:100vw;
+    height:30px;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+
+footer > p{
+    color:white;
+    font-size:15px;
+}
