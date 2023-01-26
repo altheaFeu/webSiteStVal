@@ -9,7 +9,8 @@ To be able to connect, you must have a phpMyAdmin server and create a table with
 - Your partner's first name
 - The nickame of your partner
 
-In config.php, modify the variable $bdd to fit the name of your database ($bdd = "mysql:host=hostname;dbname=dbname;charset=utf8")
+In config.php, modify the variable $bdd to fit the name of your database 
+($bdd = "mysql:host=hostname;dbname=dbname;charset=utf8")
 
 Your partner can now register and log in to access to the rest of the site 😉
 
