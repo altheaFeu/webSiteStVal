@@ -1,3 +1,4 @@
-*.html linguist-language=html
-*.js linguist-language=js
-*.css linguist-language=css
+*.js linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true
+*.htm inguist-detectable=true
