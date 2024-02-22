@@ -6,9 +6,9 @@
 [![Build By](https://img.shields.io/badge/Build%20By-Althéa_Feuillet-orange.svg)](https://yourportfolio.com)
 [![En Cours de Modification](https://img.shields.io/badge/En%20Cours%20de%20Modification-Oui-green.svg)](LICENSE.md)
 
-<p align="center">
-  Joyeuse Saint-Valentin ! ❤️
-</p>
+<h1 align="center">
+  <strong>Joyeuse Saint-Valentin ! ❤️</strong>
+</h1>
 
 ## Présentation
 
